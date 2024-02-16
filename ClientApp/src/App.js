@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
 import { Layout } from "./components/Layout";
 import "./custom.css";
+import { JqueryBase } from "./utils/JqueryBase";
 
 export default class App extends Component {
   static displayName = App.name;
@@ -3014,8 +3015,7 @@ export default class App extends Component {
         </div>
         <div className="overlay-dark-sidebar" />
         <div className="customizer-overlay" />
-        {/* inject:js*/}
-        {/* endinject*/}
+        <JqueryBase />
       </>
     );
   }

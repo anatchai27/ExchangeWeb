@@ -457,20 +457,6 @@ export const JqueryBase = () => {
 
     /* Refresh Slick Under Tab */
 
-    if (document.getElementsByClassName("slick-slider")) {
-      $('a[data-bs-toggle="tab"]').on("shown.bs.tab", function () {
-        $(".slick-slider").slick("refresh");
-      });
-
-      $(document).ready(function () {
-        var globalSlider = {
-          dots: true,
-          arrows: false,
-        };
-        $(".global-slider").slick(globalSlider);
-      });
-    }
-
     /* Dropdown Event */
     $(".dropdown-clickEvent a").on("click", function (e) {
       e.preventDefault();
